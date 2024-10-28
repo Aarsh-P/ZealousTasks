@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>TO-DO LIST</h1>
+      <div class="form">
+        ADD NEW TASK:
+        <div class="namediv">
+          <label for="task">Enter Your Task:</label><br />
+          <input
+            type="text"
+            id="task"
+            name="task"
+            style="
+              padding: 0.3em;
+              font-size: 1em;
+              border: 1px solid black;
+              border-radius: 4px;
+              box-sizing: border-box;
+            "
+            required
+          />
+        </div>
+
+        <div class="datediv">
+          <label for="date">Enter the Due Date:</label><br />
+          <input
+            type="date"
+            id="date"
+            name="date"
+            style="
+              padding: 0.3em;
+              font-size: 1em;
+              border: 1px solid black;
+              border-radius: 4px;
+              box-sizing: border-box;
+            "
+            required
+          />
+        </div>
+
+        <button class="btn" onclick="addTask()">Add</button>
+        <div id="errMsg" class="error"></div>
+      </div>
+
+      <div class="tablediv">
+        <table id="table">
+          <tr>
+            <th>Tasks</th>
+            <th>Due</th>
+            <th>Action</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form with Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Simple Form</h2>
+    <form id="myForm" onsubmit="return validateForm()">
+        <div class="input-field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <div id="nameError" class="error"></div>
+        </div>
+        
+        <div class="input-field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <div id="emailError" class="error"></div>
+        </div>
+        
+        <div class="input-field">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+            <div id="ageError" class="error"></div>
+        </div>
+        
+        <div class="input-field">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <div id="genderError" class="error"></div>
+        </div>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

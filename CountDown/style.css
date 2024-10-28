@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-color: rgba(238, 193, 89, 0.827);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 255, 255);
+    padding: 3rem;
+    border-radius: 3em;
+}
+
+.input {
+    margin: 2em;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+#startTimer {
+    margin-left: 10em;
+    height: 2.5em;
+    background-color: rgba(149, 149, 243, 0.533);
+    border: 1px solid black;
+    border-radius: 0.9em;
+}
+
+.countdown-display {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
